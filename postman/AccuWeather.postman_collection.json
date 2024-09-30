@@ -1,0 +1,912 @@
+{
+	"info": {
+		"_postman_id": "3b6369b1-c4c5-48e8-8cc8-9ca6542afa2f",
+		"name": "AccuWeather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28628541"
+	},
+	"item": [
+		{
+			"name": "Get location key",
+			"item": [
+				{
+					"name": "Postal Code Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://dataservice.accuweather.com/locations/v1/postalcodes/search?apikey={{apiKey}}&q=5539",
+							"protocol": "http",
+							"host": [
+								"dataservice",
+								"accuweather",
+								"com"
+							],
+							"path": [
+								"locations",
+								"v1",
+								"postalcodes",
+								"search"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "q",
+									"value": "5539"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Las Heras, Mendoza - 5539",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://dataservice.accuweather.com/locations/v1/postalcodes/search?apikey={{apiKey}}&q=5539",
+									"protocol": "http",
+									"host": [
+										"dataservice",
+										"accuweather",
+										"com"
+									],
+									"path": [
+										"locations",
+										"v1",
+										"postalcodes",
+										"search"
+									],
+									"query": [
+										{
+											"key": "apikey",
+											"value": "{{apiKey}}"
+										},
+										{
+											"key": "q",
+											"value": "5539"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 20:43:39 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Request-Context",
+									"value": "appId=cid-v1:cc223195-bccf-4201-9cde-374567896e20"
+								},
+								{
+									"key": "RateLimit-Limit",
+									"value": "50"
+								},
+								{
+									"key": "RateLimit-Remaining",
+									"value": "43"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, PUT, POST, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "origin, x-requested-with, accept"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3628800"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "Wed, 25 Sep 2024 20:38:15 GMT"
+								},
+								{
+									"key": "Akamai-GRN",
+									"value": "0.187c3a17.1727210619.45a79e4"
+								},
+								{
+									"key": "Accept",
+									"value": "*/*"
+								},
+								{
+									"key": "Accept-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Accept-Encoding",
+									"value": "deflate"
+								},
+								{
+									"key": "Accept-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Host",
+									"value": "api.accuweather.com"
+								},
+								{
+									"key": "Postman-Token",
+									"value": "2c778520-f2bb-4f9f-aced-5da55c935ea1"
+								},
+								{
+									"key": "User-Agent",
+									"value": "PostmanRuntime/7.42.0"
+								},
+								{
+									"key": "X-Forwarded-For",
+									"value": "201.254.88.186"
+								},
+								{
+									"key": "X-Forwarded-Port",
+									"value": "80"
+								},
+								{
+									"key": "X-Forwarded-Proto",
+									"value": "http"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"Version\": 1,\n        \"Key\": \"517286_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Barrio Aeronautico\",\n        \"EnglishName\": \"Barrio Aeronautico\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"M\",\n            \"LocalizedName\": \"Mendoza\",\n            \"EnglishName\": \"Mendoza\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Mendoza\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -32.842,\n            \"Longitude\": -68.842,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 812,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 2664,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"517287_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Barrio Estevez\",\n        \"EnglishName\": \"Barrio Estevez\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"M\",\n            \"LocalizedName\": \"Mendoza\",\n            \"EnglishName\": \"Mendoza\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Mendoza\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -32.842,\n            \"Longitude\": -68.842,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 812,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 2664,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"517288_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Barrio Infanta De San Martin\",\n        \"EnglishName\": \"Barrio Infanta De San Martin\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"M\",\n            \"LocalizedName\": \"Mendoza\",\n            \"EnglishName\": \"Mendoza\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Mendoza\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -32.842,\n            \"Longitude\": -68.842,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 812,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 2664,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"517289_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Barrio Jardin Municipal\",\n        \"EnglishName\": \"Barrio Jardin Municipal\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"M\",\n            \"LocalizedName\": \"Mendoza\",\n            \"EnglishName\": \"Mendoza\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Mendoza\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -32.842,\n            \"Longitude\": -68.842,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 812,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 2664,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"517290_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"El Challao\",\n        \"EnglishName\": \"El Challao\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"M\",\n            \"LocalizedName\": \"Mendoza\",\n            \"EnglishName\": \"Mendoza\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Mendoza\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -32.85,\n            \"Longitude\": -68.933,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 1390,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 4559,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"517291_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Empalme Resguardo\",\n        \"EnglishName\": \"Empalme Resguardo\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"M\",\n            \"LocalizedName\": \"Mendoza\",\n            \"EnglishName\": \"Mendoza\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Mendoza\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -32.842,\n            \"Longitude\": -68.842,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 812,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 2664,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"517292_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Espejo\",\n        \"EnglishName\": \"Espejo\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"M\",\n            \"LocalizedName\": \"Mendoza\",\n            \"EnglishName\": \"Mendoza\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Mendoza\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -32.842,\n            \"Longitude\": -68.842,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 812,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 2664,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"517293_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Espejo Resguardo\",\n        \"EnglishName\": \"Espejo Resguardo\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"M\",\n            \"LocalizedName\": \"Mendoza\",\n            \"EnglishName\": \"Mendoza\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Mendoza\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -32.842,\n            \"Longitude\": -68.842,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 812,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 2664,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"517294_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Las Heras\",\n        \"EnglishName\": \"Las Heras\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"M\",\n            \"LocalizedName\": \"Mendoza\",\n            \"EnglishName\": \"Mendoza\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Mendoza\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -32.85,\n            \"Longitude\": -68.817,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 807,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 2648,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"517295_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Los Tamarindos\",\n        \"EnglishName\": \"Los Tamarindos\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"M\",\n            \"LocalizedName\": \"Mendoza\",\n            \"EnglishName\": \"Mendoza\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Mendoza\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -32.833,\n            \"Longitude\": -68.783,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 779,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 2557,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"517296_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Panqueua\",\n        \"EnglishName\": \"Panqueua\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"M\",\n            \"LocalizedName\": \"Mendoza\",\n            \"EnglishName\": \"Mendoza\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Mendoza\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -32.833,\n            \"Longitude\": -68.833,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 812,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 2664,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"517297_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Sanchez De Bustamante\",\n        \"EnglishName\": \"Sanchez De Bustamante\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"M\",\n            \"LocalizedName\": \"Mendoza\",\n            \"EnglishName\": \"Mendoza\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Mendoza\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -32.842,\n            \"Longitude\": -68.842,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 812,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 2664,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"517298_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Teniente Benjamin Matienzo\",\n        \"EnglishName\": \"Teniente Benjamin Matienzo\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"M\",\n            \"LocalizedName\": \"Mendoza\",\n            \"EnglishName\": \"Mendoza\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Mendoza\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -32.842,\n            \"Longitude\": -68.842,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 812,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 2664,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"517299_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Tropero Sosa\",\n        \"EnglishName\": \"Tropero Sosa\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"M\",\n            \"LocalizedName\": \"Mendoza\",\n            \"EnglishName\": \"Mendoza\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Mendoza\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -32.842,\n            \"Longitude\": -68.842,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 812,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 2664,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"491042_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Kirkova makhala\",\n        \"EnglishName\": \"Kirkova makhala\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"EUR\",\n            \"LocalizedName\": \"Europe\",\n            \"EnglishName\": \"Europe\"\n        },\n        \"Country\": {\n            \"ID\": \"BG\",\n            \"LocalizedName\": \"Bulgaria\",\n            \"EnglishName\": \"Bulgaria\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"11\",\n            \"LocalizedName\": \"Lovech\",\n            \"EnglishName\": \"Lovech\",\n            \"Level\": 1,\n            \"LocalizedType\": \"District\",\n            \"EnglishType\": \"District\",\n            \"CountryID\": \"BG\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"EEST\",\n            \"Name\": \"Europe/Sofia\",\n            \"GmtOffset\": 3,\n            \"IsDaylightSaving\": true,\n            \"NextOffsetChange\": \"2024-10-27T01:00:00Z\"\n        },\n        \"GeoPosition\": {\n            \"Latitude\": 43.067,\n            \"Longitude\": 24.583,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 577,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 1893,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"Alerts\",\n            \"DailyPollenForecast\",\n            \"ForecastConfidence\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"495546_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Korosnagyharsany\",\n        \"EnglishName\": \"Korosnagyharsany\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"EUR\",\n            \"LocalizedName\": \"Europe\",\n            \"EnglishName\": \"Europe\"\n        },\n        \"Country\": {\n            \"ID\": \"HU\",\n            \"LocalizedName\": \"Hungary\",\n            \"EnglishName\": \"Hungary\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"BE\",\n            \"LocalizedName\": \"Békés\",\n            \"EnglishName\": \"Békés\",\n            \"Level\": 1,\n            \"LocalizedType\": \"County\",\n            \"EnglishType\": \"County\",\n            \"CountryID\": \"HU\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"CEST\",\n            \"Name\": \"Europe/Budapest\",\n            \"GmtOffset\": 2,\n            \"IsDaylightSaving\": true,\n            \"NextOffsetChange\": \"2024-10-27T01:00:00Z\"\n        },\n        \"GeoPosition\": {\n            \"Latitude\": 47,\n            \"Longitude\": 21.65,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 97,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 318,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"Alerts\",\n            \"DailyPollenForecast\",\n            \"ForecastConfidence\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"422867_PC\",\n        \"Type\": \"PostalCode\",\n        \"Rank\": 500,\n        \"LocalizedName\": \"Remich\",\n        \"EnglishName\": \"Remich\",\n        \"PrimaryPostalCode\": \"5539\",\n        \"Region\": {\n            \"ID\": \"EUR\",\n            \"LocalizedName\": \"Europe\",\n            \"EnglishName\": \"Europe\"\n        },\n        \"Country\": {\n            \"ID\": \"LU\",\n            \"LocalizedName\": \"Luxembourg\",\n            \"EnglishName\": \"Luxembourg\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"RM\",\n            \"LocalizedName\": \"Remich\",\n            \"EnglishName\": \"Remich\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Canton\",\n            \"EnglishType\": \"Canton\",\n            \"CountryID\": \"LU\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"CEST\",\n            \"Name\": \"Europe/Luxembourg\",\n            \"GmtOffset\": 2,\n            \"IsDaylightSaving\": true,\n            \"NextOffsetChange\": \"2024-10-27T01:00:00Z\"\n        },\n        \"GeoPosition\": {\n            \"Latitude\": 49.545,\n            \"Longitude\": 6.367,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 193,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 634,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"Alerts\",\n            \"DailyPollenForecast\",\n            \"ForecastConfidence\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Geoposition Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey={{apiKey}}&q=-32.851779,-68.841312",
+							"protocol": "http",
+							"host": [
+								"dataservice",
+								"accuweather",
+								"com"
+							],
+							"path": [
+								"locations",
+								"v1",
+								"cities",
+								"geoposition",
+								"search"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "q",
+									"value": "-32.851779,-68.841312"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Las Heras, Mendoza",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey={{apiKey}}&q=-32.851779,-68.841312",
+									"protocol": "http",
+									"host": [
+										"dataservice",
+										"accuweather",
+										"com"
+									],
+									"path": [
+										"locations",
+										"v1",
+										"cities",
+										"geoposition",
+										"search"
+									],
+									"query": [
+										{
+											"key": "apikey",
+											"value": "{{apiKey}}"
+										},
+										{
+											"key": "q",
+											"value": "-32.851779,-68.841312"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 20:44:24 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Request-Context",
+									"value": "appId=cid-v1:cc223195-bccf-4201-9cde-374567896e20"
+								},
+								{
+									"key": "RateLimit-Limit",
+									"value": "50"
+								},
+								{
+									"key": "RateLimit-Remaining",
+									"value": "41"
+								},
+								{
+									"key": "X-Location-Key",
+									"value": "5131"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, PUT, POST, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "origin, x-requested-with, accept"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3628800"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "Wed, 25 Sep 2024 20:43:50 GMT"
+								},
+								{
+									"key": "Akamai-GRN",
+									"value": "0.0d7c3a17.1727210664.a55fdc3"
+								},
+								{
+									"key": "Accept",
+									"value": "*/*"
+								},
+								{
+									"key": "Accept-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Accept-Encoding",
+									"value": "deflate"
+								},
+								{
+									"key": "Accept-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Host",
+									"value": "api.accuweather.com"
+								},
+								{
+									"key": "Postman-Token",
+									"value": "923ed607-ea96-4800-843c-6cd8f7bbe8fb"
+								},
+								{
+									"key": "User-Agent",
+									"value": "PostmanRuntime/7.42.0"
+								},
+								{
+									"key": "X-Forwarded-For",
+									"value": "201.254.88.186"
+								},
+								{
+									"key": "X-Forwarded-Port",
+									"value": "80"
+								},
+								{
+									"key": "X-Forwarded-Proto",
+									"value": "http"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Version\": 1,\n    \"Key\": \"5131\",\n    \"Type\": \"City\",\n    \"Rank\": 45,\n    \"LocalizedName\": \"Las Heras\",\n    \"EnglishName\": \"Las Heras\",\n    \"PrimaryPostalCode\": \"\",\n    \"Region\": {\n        \"ID\": \"SAM\",\n        \"LocalizedName\": \"South America\",\n        \"EnglishName\": \"South America\"\n    },\n    \"Country\": {\n        \"ID\": \"AR\",\n        \"LocalizedName\": \"Argentina\",\n        \"EnglishName\": \"Argentina\"\n    },\n    \"AdministrativeArea\": {\n        \"ID\": \"M\",\n        \"LocalizedName\": \"Mendoza\",\n        \"EnglishName\": \"Mendoza\",\n        \"Level\": 1,\n        \"LocalizedType\": \"Province\",\n        \"EnglishType\": \"Province\",\n        \"CountryID\": \"AR\"\n    },\n    \"TimeZone\": {\n        \"Code\": \"ART\",\n        \"Name\": \"America/Argentina/Mendoza\",\n        \"GmtOffset\": -3,\n        \"IsDaylightSaving\": false,\n        \"NextOffsetChange\": null\n    },\n    \"GeoPosition\": {\n        \"Latitude\": -32.852,\n        \"Longitude\": -68.835,\n        \"Elevation\": {\n            \"Metric\": {\n                \"Value\": 822,\n                \"Unit\": \"m\",\n                \"UnitType\": 5\n            },\n            \"Imperial\": {\n                \"Value\": 2696,\n                \"Unit\": \"ft\",\n                \"UnitType\": 0\n            }\n        }\n    },\n    \"IsAlias\": false,\n    \"SupplementalAdminAreas\": [],\n    \"DataSets\": [\n        \"AirQualityCurrentConditions\",\n        \"AirQualityForecasts\",\n        \"Alerts\",\n        \"FutureRadar\",\n        \"MinuteCast\",\n        \"Radar\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "City Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://dataservice.accuweather.com/locations/v1/cities/search?apikey={{apiKey}}&q=las heras",
+							"protocol": "http",
+							"host": [
+								"dataservice",
+								"accuweather",
+								"com"
+							],
+							"path": [
+								"locations",
+								"v1",
+								"cities",
+								"search"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "q",
+									"value": "las heras"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Las Heras (varios ARG)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://dataservice.accuweather.com/locations/v1/cities/search?apikey={{apiKey}}&q=las heras",
+									"protocol": "http",
+									"host": [
+										"dataservice",
+										"accuweather",
+										"com"
+									],
+									"path": [
+										"locations",
+										"v1",
+										"cities",
+										"search"
+									],
+									"query": [
+										{
+											"key": "apikey",
+											"value": "{{apiKey}}"
+										},
+										{
+											"key": "q",
+											"value": "las heras"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 20:45:39 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Request-Context",
+									"value": "appId=cid-v1:cc223195-bccf-4201-9cde-374567896e20"
+								},
+								{
+									"key": "RateLimit-Limit",
+									"value": "50"
+								},
+								{
+									"key": "RateLimit-Remaining",
+									"value": "40"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, PUT, POST, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "origin, x-requested-with, accept"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3628800"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "Wed, 25 Sep 2024 20:38:00 GMT"
+								},
+								{
+									"key": "Akamai-GRN",
+									"value": "0.3e962e17.1727210739.d386adb"
+								},
+								{
+									"key": "Accept",
+									"value": "*/*"
+								},
+								{
+									"key": "Accept-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Accept-Encoding",
+									"value": "deflate"
+								},
+								{
+									"key": "Accept-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Host",
+									"value": "api.accuweather.com"
+								},
+								{
+									"key": "Postman-Token",
+									"value": "e0f8d0b6-3e9d-4477-95aa-79db860333fa"
+								},
+								{
+									"key": "User-Agent",
+									"value": "PostmanRuntime/7.42.0"
+								},
+								{
+									"key": "X-Forwarded-For",
+									"value": "201.254.88.186"
+								},
+								{
+									"key": "X-Forwarded-Port",
+									"value": "80"
+								},
+								{
+									"key": "X-Forwarded-Proto",
+									"value": "http"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"Version\": 1,\n        \"Key\": \"5131\",\n        \"Type\": \"City\",\n        \"Rank\": 45,\n        \"LocalizedName\": \"Las Heras\",\n        \"EnglishName\": \"Las Heras\",\n        \"PrimaryPostalCode\": \"\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"M\",\n            \"LocalizedName\": \"Mendoza\",\n            \"EnglishName\": \"Mendoza\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Mendoza\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -32.852,\n            \"Longitude\": -68.835,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 822,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 2696,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"Alerts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"5969\",\n        \"Type\": \"City\",\n        \"Rank\": 65,\n        \"LocalizedName\": \"Las Heras\",\n        \"EnglishName\": \"Las Heras\",\n        \"PrimaryPostalCode\": \"\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"Z\",\n            \"LocalizedName\": \"Santa Cruz\",\n            \"EnglishName\": \"Santa Cruz\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Rio_Gallegos\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -46.541,\n            \"Longitude\": -68.932,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 322,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 1056,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"Alerts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"8702\",\n        \"Type\": \"City\",\n        \"Rank\": 75,\n        \"LocalizedName\": \"Las Heras\",\n        \"EnglishName\": \"Las Heras\",\n        \"PrimaryPostalCode\": \"\",\n        \"Region\": {\n            \"ID\": \"SAM\",\n            \"LocalizedName\": \"South America\",\n            \"EnglishName\": \"South America\"\n        },\n        \"Country\": {\n            \"ID\": \"AR\",\n            \"LocalizedName\": \"Argentina\",\n            \"EnglishName\": \"Argentina\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"X\",\n            \"LocalizedName\": \"Cordoba\",\n            \"EnglishName\": \"Cordoba\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Province\",\n            \"EnglishType\": \"Province\",\n            \"CountryID\": \"AR\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"ART\",\n            \"Name\": \"America/Argentina/Cordoba\",\n            \"GmtOffset\": -3,\n            \"IsDaylightSaving\": false,\n            \"NextOffsetChange\": null\n        },\n        \"GeoPosition\": {\n            \"Latitude\": -31.567,\n            \"Longitude\": -63.917,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 330,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 1082,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"Alerts\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"2322523\",\n        \"Type\": \"City\",\n        \"Rank\": 85,\n        \"LocalizedName\": \"Las Heras\",\n        \"EnglishName\": \"Las Heras\",\n        \"PrimaryPostalCode\": \"\",\n        \"Region\": {\n            \"ID\": \"EUR\",\n            \"LocalizedName\": \"Europe\",\n            \"EnglishName\": \"Europe\"\n        },\n        \"Country\": {\n            \"ID\": \"ES\",\n            \"LocalizedName\": \"Spain\",\n            \"EnglishName\": \"Spain\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"AS\",\n            \"LocalizedName\": \"Asturias\",\n            \"EnglishName\": \"Asturias\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Autonomous Community\",\n            \"EnglishType\": \"Autonomous Community\",\n            \"CountryID\": \"ES\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"CEST\",\n            \"Name\": \"Europe/Madrid\",\n            \"GmtOffset\": 2,\n            \"IsDaylightSaving\": true,\n            \"NextOffsetChange\": \"2024-10-27T01:00:00Z\"\n        },\n        \"GeoPosition\": {\n            \"Latitude\": 43.36,\n            \"Longitude\": -5.931,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 170,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 557,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [\n            {\n                \"Level\": 3,\n                \"LocalizedName\": \"Oviedo\",\n                \"EnglishName\": \"Oviedo\"\n            }\n        ],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"Alerts\",\n            \"DailyPollenForecast\",\n            \"ForecastConfidence\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    },\n    {\n        \"Version\": 1,\n        \"Key\": \"1458848\",\n        \"Type\": \"City\",\n        \"Rank\": 85,\n        \"LocalizedName\": \"Las Heras\",\n        \"EnglishName\": \"Las Heras\",\n        \"PrimaryPostalCode\": \"\",\n        \"Region\": {\n            \"ID\": \"EUR\",\n            \"LocalizedName\": \"Europe\",\n            \"EnglishName\": \"Europe\"\n        },\n        \"Country\": {\n            \"ID\": \"ES\",\n            \"LocalizedName\": \"Spain\",\n            \"EnglishName\": \"Spain\"\n        },\n        \"AdministrativeArea\": {\n            \"ID\": \"CL\",\n            \"LocalizedName\": \"Castile and Leon\",\n            \"EnglishName\": \"Castile and Leon\",\n            \"Level\": 1,\n            \"LocalizedType\": \"Autonomous Community\",\n            \"EnglishType\": \"Autonomous Community\",\n            \"CountryID\": \"ES\"\n        },\n        \"TimeZone\": {\n            \"Code\": \"CEST\",\n            \"Name\": \"Europe/Madrid\",\n            \"GmtOffset\": 2,\n            \"IsDaylightSaving\": true,\n            \"NextOffsetChange\": \"2024-10-27T01:00:00Z\"\n        },\n        \"GeoPosition\": {\n            \"Latitude\": 42.801,\n            \"Longitude\": -4.74,\n            \"Elevation\": {\n                \"Metric\": {\n                    \"Value\": 1202,\n                    \"Unit\": \"m\",\n                    \"UnitType\": 5\n                },\n                \"Imperial\": {\n                    \"Value\": 3942,\n                    \"Unit\": \"ft\",\n                    \"UnitType\": 0\n                }\n            }\n        },\n        \"IsAlias\": false,\n        \"SupplementalAdminAreas\": [\n            {\n                \"Level\": 3,\n                \"LocalizedName\": \"Santibáñez de la Peña\",\n                \"EnglishName\": \"Santibáñez de la Peña\"\n            }\n        ],\n        \"DataSets\": [\n            \"AirQualityCurrentConditions\",\n            \"AirQualityForecasts\",\n            \"Alerts\",\n            \"DailyPollenForecast\",\n            \"ForecastConfidence\",\n            \"FutureRadar\",\n            \"MinuteCast\",\n            \"Radar\"\n        ]\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Current Conditions API",
+			"item": [
+				{
+					"name": "Current Conditions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://dataservice.accuweather.com/currentconditions/v1/5131?apikey={{apiKey}}&details=true",
+							"protocol": "http",
+							"host": [
+								"dataservice",
+								"accuweather",
+								"com"
+							],
+							"path": [
+								"currentconditions",
+								"v1",
+								"5131"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "details",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LK 5131 (Las Heras) - No details",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://dataservice.accuweather.com/currentconditions/v1/5131?apikey={{apiKey}}",
+									"protocol": "http",
+									"host": [
+										"dataservice",
+										"accuweather",
+										"com"
+									],
+									"path": [
+										"currentconditions",
+										"v1",
+										"5131"
+									],
+									"query": [
+										{
+											"key": "apikey",
+											"value": "{{apiKey}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 20:47:33 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Request-Context",
+									"value": "appId=cid-v1:0158d69b-75d9-4a19-9e5f-a14693f847e4"
+								},
+								{
+									"key": "RateLimit-Limit",
+									"value": "50"
+								},
+								{
+									"key": "RateLimit-Remaining",
+									"value": "38"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, PUT, POST, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "origin, x-requested-with, accept"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3628800"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "Tue, 24 Sep 2024 20:49:11 GMT"
+								},
+								{
+									"key": "Akamai-GRN",
+									"value": "0.139eca17.1727210853.6169fe5"
+								},
+								{
+									"key": "Accept",
+									"value": "*/*"
+								},
+								{
+									"key": "Accept-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Accept-Encoding",
+									"value": "deflate"
+								},
+								{
+									"key": "Accept-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Host",
+									"value": "api.accuweather.com"
+								},
+								{
+									"key": "Postman-Token",
+									"value": "9c7b58aa-e94e-45da-be53-afca6ca87729"
+								},
+								{
+									"key": "User-Agent",
+									"value": "PostmanRuntime/7.42.0"
+								},
+								{
+									"key": "X-Forwarded-For",
+									"value": "201.254.88.186"
+								},
+								{
+									"key": "X-Forwarded-Port",
+									"value": "80"
+								},
+								{
+									"key": "X-Forwarded-Proto",
+									"value": "http"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"LocalObservationDateTime\": \"2024-09-24T17:20:00-03:00\",\n        \"EpochTime\": 1727209200,\n        \"WeatherText\": \"Sunny\",\n        \"WeatherIcon\": 1,\n        \"HasPrecipitation\": false,\n        \"PrecipitationType\": null,\n        \"IsDayTime\": true,\n        \"Temperature\": {\n            \"Metric\": {\n                \"Value\": 23.9,\n                \"Unit\": \"C\",\n                \"UnitType\": 17\n            },\n            \"Imperial\": {\n                \"Value\": 75,\n                \"Unit\": \"F\",\n                \"UnitType\": 18\n            }\n        },\n        \"MobileLink\": \"http://www.accuweather.com/en/ar/las-heras/5131/current-weather/5131?lang=en-us\",\n        \"Link\": \"http://www.accuweather.com/en/ar/las-heras/5131/current-weather/5131?lang=en-us\"\n    }\n]"
+						},
+						{
+							"name": "LK 5131 (Las Heras) - With details",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://dataservice.accuweather.com/currentconditions/v1/5131?apikey={{apiKey}}&details=true",
+									"protocol": "http",
+									"host": [
+										"dataservice",
+										"accuweather",
+										"com"
+									],
+									"path": [
+										"currentconditions",
+										"v1",
+										"5131"
+									],
+									"query": [
+										{
+											"key": "apikey",
+											"value": "{{apiKey}}"
+										},
+										{
+											"key": "details",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 24 Sep 2024 20:49:22 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Request-Context",
+									"value": "appId=cid-v1:0158d69b-75d9-4a19-9e5f-a14693f847e4"
+								},
+								{
+									"key": "RateLimit-Limit",
+									"value": "50"
+								},
+								{
+									"key": "RateLimit-Remaining",
+									"value": "37"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, PUT, POST, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "origin, x-requested-with, accept"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3628800"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "Tue, 24 Sep 2024 20:58:18 GMT"
+								},
+								{
+									"key": "Akamai-GRN",
+									"value": "0.1f0cde17.1727210962.b152ac7"
+								},
+								{
+									"key": "Accept",
+									"value": "*/*"
+								},
+								{
+									"key": "Accept-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Accept-Encoding",
+									"value": "deflate"
+								},
+								{
+									"key": "Accept-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Host",
+									"value": "api.accuweather.com"
+								},
+								{
+									"key": "Postman-Token",
+									"value": "c9137e33-d66e-417b-b1d3-c6abbff1af15"
+								},
+								{
+									"key": "User-Agent",
+									"value": "PostmanRuntime/7.42.0"
+								},
+								{
+									"key": "X-Forwarded-For",
+									"value": "201.254.88.186"
+								},
+								{
+									"key": "X-Forwarded-Port",
+									"value": "80"
+								},
+								{
+									"key": "X-Forwarded-Proto",
+									"value": "http"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"LocalObservationDateTime\": \"2024-09-24T17:35:00-03:00\",\n        \"EpochTime\": 1727210100,\n        \"WeatherText\": \"Sunny\",\n        \"WeatherIcon\": 1,\n        \"HasPrecipitation\": false,\n        \"PrecipitationType\": null,\n        \"IsDayTime\": true,\n        \"Temperature\": {\n            \"Metric\": {\n                \"Value\": 23.9,\n                \"Unit\": \"C\",\n                \"UnitType\": 17\n            },\n            \"Imperial\": {\n                \"Value\": 75,\n                \"Unit\": \"F\",\n                \"UnitType\": 18\n            }\n        },\n        \"RealFeelTemperature\": {\n            \"Metric\": {\n                \"Value\": 23.9,\n                \"Unit\": \"C\",\n                \"UnitType\": 17,\n                \"Phrase\": \"Pleasant\"\n            },\n            \"Imperial\": {\n                \"Value\": 75,\n                \"Unit\": \"F\",\n                \"UnitType\": 18,\n                \"Phrase\": \"Pleasant\"\n            }\n        },\n        \"RealFeelTemperatureShade\": {\n            \"Metric\": {\n                \"Value\": 22.7,\n                \"Unit\": \"C\",\n                \"UnitType\": 17,\n                \"Phrase\": \"Pleasant\"\n            },\n            \"Imperial\": {\n                \"Value\": 73,\n                \"Unit\": \"F\",\n                \"UnitType\": 18,\n                \"Phrase\": \"Pleasant\"\n            }\n        },\n        \"RelativeHumidity\": 20,\n        \"IndoorRelativeHumidity\": 20,\n        \"DewPoint\": {\n            \"Metric\": {\n                \"Value\": 0,\n                \"Unit\": \"C\",\n                \"UnitType\": 17\n            },\n            \"Imperial\": {\n                \"Value\": 32,\n                \"Unit\": \"F\",\n                \"UnitType\": 18\n            }\n        },\n        \"Wind\": {\n            \"Direction\": {\n                \"Degrees\": 0,\n                \"Localized\": \"N\",\n                \"English\": \"N\"\n            },\n            \"Speed\": {\n                \"Metric\": {\n                    \"Value\": 7.4,\n                    \"Unit\": \"km/h\",\n                    \"UnitType\": 7\n                },\n                \"Imperial\": {\n                    \"Value\": 4.6,\n                    \"Unit\": \"mi/h\",\n                    \"UnitType\": 9\n                }\n            }\n        },\n        \"WindGust\": {\n            \"Speed\": {\n                \"Metric\": {\n                    \"Value\": 7.4,\n                    \"Unit\": \"km/h\",\n                    \"UnitType\": 7\n                },\n                \"Imperial\": {\n                    \"Value\": 4.6,\n                    \"Unit\": \"mi/h\",\n                    \"UnitType\": 9\n                }\n            }\n        },\n        \"UVIndex\": 1,\n        \"UVIndexText\": \"Low\",\n        \"Visibility\": {\n            \"Metric\": {\n                \"Value\": 16.1,\n                \"Unit\": \"km\",\n                \"UnitType\": 6\n            },\n            \"Imperial\": {\n                \"Value\": 10,\n                \"Unit\": \"mi\",\n                \"UnitType\": 2\n            }\n        },\n        \"ObstructionsToVisibility\": \"\",\n        \"CloudCover\": 10,\n        \"Ceiling\": {\n            \"Metric\": {\n                \"Value\": 12192,\n                \"Unit\": \"m\",\n                \"UnitType\": 5\n            },\n            \"Imperial\": {\n                \"Value\": 40000,\n                \"Unit\": \"ft\",\n                \"UnitType\": 0\n            }\n        },\n        \"Pressure\": {\n            \"Metric\": {\n                \"Value\": 1010,\n                \"Unit\": \"mb\",\n                \"UnitType\": 14\n            },\n            \"Imperial\": {\n                \"Value\": 29.83,\n                \"Unit\": \"inHg\",\n                \"UnitType\": 12\n            }\n        },\n        \"PressureTendency\": {\n            \"LocalizedText\": \"Steady\",\n            \"Code\": \"S\"\n        },\n        \"Past24HourTemperatureDeparture\": {\n            \"Metric\": {\n                \"Value\": 1.1,\n                \"Unit\": \"C\",\n                \"UnitType\": 17\n            },\n            \"Imperial\": {\n                \"Value\": 2,\n                \"Unit\": \"F\",\n                \"UnitType\": 18\n            }\n        },\n        \"ApparentTemperature\": {\n            \"Metric\": {\n                \"Value\": 21.7,\n                \"Unit\": \"C\",\n                \"UnitType\": 17\n            },\n            \"Imperial\": {\n                \"Value\": 71,\n                \"Unit\": \"F\",\n                \"UnitType\": 18\n            }\n        },\n        \"WindChillTemperature\": {\n            \"Metric\": {\n                \"Value\": 23.9,\n                \"Unit\": \"C\",\n                \"UnitType\": 17\n            },\n            \"Imperial\": {\n                \"Value\": 75,\n                \"Unit\": \"F\",\n                \"UnitType\": 18\n            }\n        },\n        \"WetBulbTemperature\": {\n            \"Metric\": {\n                \"Value\": 11.7,\n                \"Unit\": \"C\",\n                \"UnitType\": 17\n            },\n            \"Imperial\": {\n                \"Value\": 53,\n                \"Unit\": \"F\",\n                \"UnitType\": 18\n            }\n        },\n        \"WetBulbGlobeTemperature\": {\n            \"Metric\": {\n                \"Value\": 18.2,\n                \"Unit\": \"C\",\n                \"UnitType\": 17\n            },\n            \"Imperial\": {\n                \"Value\": 65,\n                \"Unit\": \"F\",\n                \"UnitType\": 18\n            }\n        },\n        \"Precip1hr\": {\n            \"Metric\": {\n                \"Value\": 0,\n                \"Unit\": \"mm\",\n                \"UnitType\": 3\n            },\n            \"Imperial\": {\n                \"Value\": 0,\n                \"Unit\": \"in\",\n                \"UnitType\": 1\n            }\n        },\n        \"PrecipitationSummary\": {\n            \"Precipitation\": {\n                \"Metric\": {\n                    \"Value\": 0,\n                    \"Unit\": \"mm\",\n                    \"UnitType\": 3\n                },\n                \"Imperial\": {\n                    \"Value\": 0,\n                    \"Unit\": \"in\",\n                    \"UnitType\": 1\n                }\n            },\n            \"PastHour\": {\n                \"Metric\": {\n                    \"Value\": 0,\n                    \"Unit\": \"mm\",\n                    \"UnitType\": 3\n                },\n                \"Imperial\": {\n                    \"Value\": 0,\n                    \"Unit\": \"in\",\n                    \"UnitType\": 1\n                }\n            },\n            \"Past3Hours\": {\n                \"Metric\": {\n                    \"Value\": 0,\n                    \"Unit\": \"mm\",\n                    \"UnitType\": 3\n                },\n                \"Imperial\": {\n                    \"Value\": 0,\n                    \"Unit\": \"in\",\n                    \"UnitType\": 1\n                }\n            },\n            \"Past6Hours\": {\n                \"Metric\": {\n                    \"Value\": 0,\n                    \"Unit\": \"mm\",\n                    \"UnitType\": 3\n                },\n                \"Imperial\": {\n                    \"Value\": 0,\n                    \"Unit\": \"in\",\n                    \"UnitType\": 1\n                }\n            },\n            \"Past9Hours\": {\n                \"Metric\": {\n                    \"Value\": 0,\n                    \"Unit\": \"mm\",\n                    \"UnitType\": 3\n                },\n                \"Imperial\": {\n                    \"Value\": 0,\n                    \"Unit\": \"in\",\n                    \"UnitType\": 1\n                }\n            },\n            \"Past12Hours\": {\n                \"Metric\": {\n                    \"Value\": 0,\n                    \"Unit\": \"mm\",\n                    \"UnitType\": 3\n                },\n                \"Imperial\": {\n                    \"Value\": 0,\n                    \"Unit\": \"in\",\n                    \"UnitType\": 1\n                }\n            },\n            \"Past18Hours\": {\n                \"Metric\": {\n                    \"Value\": 0,\n                    \"Unit\": \"mm\",\n                    \"UnitType\": 3\n                },\n                \"Imperial\": {\n                    \"Value\": 0,\n                    \"Unit\": \"in\",\n                    \"UnitType\": 1\n                }\n            },\n            \"Past24Hours\": {\n                \"Metric\": {\n                    \"Value\": 0,\n                    \"Unit\": \"mm\",\n                    \"UnitType\": 3\n                },\n                \"Imperial\": {\n                    \"Value\": 0,\n                    \"Unit\": \"in\",\n                    \"UnitType\": 1\n                }\n            }\n        },\n        \"TemperatureSummary\": {\n            \"Past6HourRange\": {\n                \"Minimum\": {\n                    \"Metric\": {\n                        \"Value\": 17.8,\n                        \"Unit\": \"C\",\n                        \"UnitType\": 17\n                    },\n                    \"Imperial\": {\n                        \"Value\": 64,\n                        \"Unit\": \"F\",\n                        \"UnitType\": 18\n                    }\n                },\n                \"Maximum\": {\n                    \"Metric\": {\n                        \"Value\": 23.9,\n                        \"Unit\": \"C\",\n                        \"UnitType\": 17\n                    },\n                    \"Imperial\": {\n                        \"Value\": 75,\n                        \"Unit\": \"F\",\n                        \"UnitType\": 18\n                    }\n                }\n            },\n            \"Past12HourRange\": {\n                \"Minimum\": {\n                    \"Metric\": {\n                        \"Value\": 10,\n                        \"Unit\": \"C\",\n                        \"UnitType\": 17\n                    },\n                    \"Imperial\": {\n                        \"Value\": 50,\n                        \"Unit\": \"F\",\n                        \"UnitType\": 18\n                    }\n                },\n                \"Maximum\": {\n                    \"Metric\": {\n                        \"Value\": 23.9,\n                        \"Unit\": \"C\",\n                        \"UnitType\": 17\n                    },\n                    \"Imperial\": {\n                        \"Value\": 75,\n                        \"Unit\": \"F\",\n                        \"UnitType\": 18\n                    }\n                }\n            },\n            \"Past24HourRange\": {\n                \"Minimum\": {\n                    \"Metric\": {\n                        \"Value\": 10,\n                        \"Unit\": \"C\",\n                        \"UnitType\": 17\n                    },\n                    \"Imperial\": {\n                        \"Value\": 50,\n                        \"Unit\": \"F\",\n                        \"UnitType\": 18\n                    }\n                },\n                \"Maximum\": {\n                    \"Metric\": {\n                        \"Value\": 23.9,\n                        \"Unit\": \"C\",\n                        \"UnitType\": 17\n                    },\n                    \"Imperial\": {\n                        \"Value\": 75,\n                        \"Unit\": \"F\",\n                        \"UnitType\": 18\n                    }\n                }\n            }\n        },\n        \"MobileLink\": \"http://www.accuweather.com/en/ar/las-heras/5131/current-weather/5131?lang=en-us\",\n        \"Link\": \"http://www.accuweather.com/en/ar/las-heras/5131/current-weather/5131?lang=en-us\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
